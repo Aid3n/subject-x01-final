@@ -54,7 +54,7 @@ bot.on('message', message => {
 // @baka
 bot.on('message', message => {
   if (message.content === '<@327194208312229888>') {
-      return message.channel.send("ola");
+      return message.channel.send("Ese cabrón me va a comer mis huevos roboticos por debajo del culo cual racimo de uvas virtuales.");
   }
 });
 // on_join
