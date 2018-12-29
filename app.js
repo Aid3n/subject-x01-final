@@ -44,19 +44,27 @@ bot.on("message", async message => {
 
 });
 
+// @bot
+client.on('message', message => {
+  if (message.content === '<@455725168556245003>') {
+      return message.channel.send("Mi prefijo és _**!**_");
+  }
+});
+
+// on_join
 client.on("guildMemberAdd", (member) => { 
-    let guild = member.guild; 
-    let memberTag = member.user.tag; 
-    if(guild.systemChannel){
-        guild.systemChannel.send(new Discord.RichEmbed() 
-        .setTitle("Usuario nuevo!")
-        .setColor('f4eb42')
-	.setDescription(memberTag + " ha entrado al servidor!")
-        .setThumbnail(member.user.displayAvatarURL) 
-        .addField("Número de miembros", member.guild.memberCount)
-        .setTimestamp()
-        );
-    }
+  let guild = member.guild; 
+  let memberTag = member.user.tag; 
+  if(guild.systemChannel){
+      guild.systemChannel.send(new Discord.RichEmbed() 
+      .setTitle("Usuario nuevo!")
+      .setColor('f4eb42')
+.setDescription(memberTag + " ha entrado al servidor!")
+      .setThumbnail(member.user.displayAvatarURL) 
+      .addField("Número de miembros", member.guild.memberCount)
+      .setTimestamp()
+      );
+  }
 });
 
 bot.login(process.env.BOT_TOKEN);
