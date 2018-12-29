@@ -47,7 +47,7 @@ bot.on("message", async message => {
 // @bot
 bot.on('message', message => {
   if (message.content === '<@455725168556245003>') {
-      return message.channel.send("Mi prefijo és _**!**_\nDigo, <ava:528587463695007764>");
+      return message.channel.send("Mi prefijo és _**!**_\nDigo, <:ava:528587463695007764>");
   }
 });
 
