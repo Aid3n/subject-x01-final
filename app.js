@@ -51,6 +51,12 @@ bot.on('message', message => {
   }
 });
 
+// @baka
+bot.on('message', message => {
+  if (message.content === '<@327194208312229888>') {
+      return message.channel.send("ola");
+  }
+});
 // on_join
 bot.on("guildMemberAdd", (member) => { 
   let guild = member.guild; 
