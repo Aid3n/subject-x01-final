@@ -11,15 +11,7 @@ module.exports.run = async (bot, message, args) => {
             name: "wima.png"
         }
     ]});
-    
-    else message.channel.send("There is your avatar!");
-        await message.channel.send({files: [
-        {
-            attachment: target.displayAvatarURL,
-            name: "wima.png"
-        }
-    ]});
-    
+       
     msg.delete();
 }
 
