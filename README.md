@@ -1,1 +1,1 @@
-# disboard-bot
+# Subject X01 - Discord Bot
