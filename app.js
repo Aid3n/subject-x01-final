@@ -62,7 +62,11 @@ bot.on('message', message => {
 bot.on('message', message => {
   if (message.content === 'love you') {
       message.channel.send("I love you too ♥");
-      message.channel.send.file("./files/kokoro.png");
+      message.channel.send({
+            files: [
+                "./files/kokoro.png"
+            ]
+        })
   }
 });
 
