@@ -57,6 +57,15 @@ bot.on('message', message => {
       return message.channel.send("Ese cabrón me va a comer mis huevos roboticos por debajo del culo cual racimo de uvas virtuales.");
   }
 });
+
+// love you
+bot.on('message', message => {
+  if (message.content === 'love you') {
+      message.channel.send("I love you too ♥");
+      message.channel.send.file("./files/kokoro.png");
+  }
+});
+
 // on_join
 bot.on("guildMemberAdd", (member) => { 
   let guild = member.guild; 
