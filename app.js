@@ -48,6 +48,7 @@ bot.on("message", async message => {
 bot.on('message', message => {
   if (message.content === '<@455725168556245003>') {
       return message.channel.send("Mi prefijo és _**!**_");
+      return message.channel.send("Digo, :ava:");
   }
 });
 
@@ -59,7 +60,7 @@ bot.on("guildMemberAdd", (member) => {
       guild.systemChannel.send(new Discord.RichEmbed() 
       .setTitle("Usuario nuevo!")
       .setColor('f4eb42')
-.setDescription(memberTag + " ha entrado al servidor!")
+      .setDescription(memberTag + " ha entrado al servidor!")
       .setThumbnail(member.user.displayAvatarURL) 
       .addField("Número de miembros", member.guild.memberCount)
       .setTimestamp()
