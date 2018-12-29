@@ -18,3 +18,18 @@ module.exports.run = async (bot, message, args) => {
 module.exports.help = {
     name: "wima"
 }
+
+
+
+// love you
+bot.on('message', message => {
+  if (message.content === 'love you') {
+      message.channel.send("I love you too ♥");
+      message.channel.send({
+            files: [
+                "./files/kokoro.png"
+            ]
+        })
+  }
+});
+
