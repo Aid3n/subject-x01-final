@@ -45,14 +45,14 @@ bot.on("message", async message => {
 });
 
 // @bot
-client.on('message', message => {
+bot.on('message', message => {
   if (message.content === '<@455725168556245003>') {
       return message.channel.send("Mi prefijo és _**!**_");
   }
 });
 
 // on_join
-client.on("guildMemberAdd", (member) => { 
+bot.on("guildMemberAdd", (member) => { 
   let guild = member.guild; 
   let memberTag = member.user.tag; 
   if(guild.systemChannel){
@@ -66,5 +66,6 @@ client.on("guildMemberAdd", (member) => {
       );
   }
 });
+
 
 bot.login(process.env.BOT_TOKEN);
