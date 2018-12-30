@@ -10,7 +10,6 @@
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
-    "node.js": "0.0.0",
-    "ytdl-core": "0.28.3"
+    "node.js": "0.0.0"
   }
 }
